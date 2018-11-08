@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username : "
+        android:textSize="15sp"
+        android:layout_below="@+id/textsubject"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_textuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/textuser"
+        />
+
+    <TextView
+        android:id="@+id/textpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password : "
+        android:textSize="15sp"
+        android:layout_below="@+id/textsubject"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_textpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="4dp"
+        android:inputType="textPassword"
+        android:layout_toRightOf="@id/textpass"
+        />
+
+    <TextView
+        android:id="@+id/textgender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender : "
+        android:textSize="15sp"
+        android:layout_below="@+id/textsubject"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="90dp"
+        android:layout_toRightOf="@id/textgender"
+        android:layout_marginLeft="18dp">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="15sp"/>
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="15sp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textbd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birthday : "
+        android:textSize="15sp"
+        android:layout_below="@+id/textgender"
+        android:inputType="date"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"/>
+
+    <EditText
+        android:id="@+id/edit_textbd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:layout_toRightOf="@id/textbd"
+        android:inputType="datetime"
+        />
+
+    <TextView
+        android:id="@+id/textemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email : "
+        android:textSize="15sp"
+        android:layout_below="@+id/textbd"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="27dp"/>
+
+    <EditText
+        android:id="@+id/edit_textemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_toRightOf="@id/textemail"
+        android:inputType="textEmailAddress"
+        />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number : "
+        android:textSize="15sp"
+        android:layout_below="@+id/textemail"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp" />
+
+    <EditText
+        android:id="@+id/edit_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_toRightOf="@id/phone"
+        android:inputType="phone"/>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:text="Submit"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edit_phone"
+        />
+
+
+</RelativeLayout>
